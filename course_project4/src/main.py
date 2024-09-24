@@ -98,7 +98,7 @@ def user_interaction():
         for vacancy in good_vacancy:
             print(vacancy)
 
-    with open('/Users/andalou/PycharmProjects/API-hh/data/vacancies.json', 'w') as file:
+    with open('vacancies.json', 'w') as file:
         json.dump(good_vacancy, file, default=lambda x: x.__dict__)  # записывает в файл vacancies.json выбранные пользователем вакансии
 
 
